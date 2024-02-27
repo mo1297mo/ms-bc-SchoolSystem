@@ -12,7 +12,7 @@ enum 50100 "SubjectType"
     }
     value(1; "Mathe")
     {
-        Caption = 'Mathematics';
+        Caption = 'Mathe';
     }
     value(2; "Biologie")
     {
