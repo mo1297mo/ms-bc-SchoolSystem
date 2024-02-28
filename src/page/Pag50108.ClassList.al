@@ -3,9 +3,10 @@ page 50108 "Class List"
     ApplicationArea = All;
     Caption = 'Class List';
     PageType = List;
+    CardPageId = "Class Card";
     SourceTable = Class;
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)

@@ -4,7 +4,7 @@ page 50113 "Teacher Card"
     Caption = 'Teacher Card';
     PageType = Card;
     SourceTable = Teacher;
-    
+
     layout
     {
         area(content)
@@ -12,7 +12,7 @@ page 50113 "Teacher Card"
             group(General)
             {
                 Caption = 'General';
-                
+
                 field(ID; Rec.ID)
                 {
                     ToolTip = 'Specifies the value of the ID field.';
