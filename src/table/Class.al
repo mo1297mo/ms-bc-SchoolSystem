@@ -8,9 +8,11 @@ table 50100 "Class"
 
     fields
     {
-        field(1; "ID"; Code[10])
+        field(1; "ID"; Integer)
         {
-            DataClassification = ToBeClassified;
+            DataClassification = SystemMetadata;
+            AutoIncrement = true;
+            Editable = false;
             Caption = 'ID';
         }
         field(2; "Name"; Text[50])

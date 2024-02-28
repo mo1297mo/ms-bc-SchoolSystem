@@ -8,10 +8,12 @@ table 50102 "Teacher"
 
     fields
     {
-        field(1; "ID"; Code[20])
+        field(1; "ID"; Integer)
         {
-            DataClassification = ToBeClassified;
-            Caption = 'ID';
+            DataClassification = SystemMetadata;
+            AutoIncrement = true;
+            Editable = false;
+            Caption = '';
         }
         field(2; "First Name"; Text[50])
         {
@@ -23,11 +25,10 @@ table 50102 "Teacher"
             DataClassification = ToBeClassified;
             Caption = 'Last Name';
         }
-        field(4; "Subject ID"; Code[10])
+        field(4; Subject; Enum SubjectType)
         {
             DataClassification = ToBeClassified;
-            Caption = 'Subject ID';
-            TableRelation = "Subject"."ID";
+            Caption = 'Subject';
         }
     }
 

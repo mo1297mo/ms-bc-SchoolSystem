@@ -1,17 +1,18 @@
-page 50110 "Student List"
+page 50112 "Student Card"
 {
     ApplicationArea = All;
-    Caption = 'Student List';
-    PageType = List;
+    Caption = 'Student Card';
+    PageType = Card;
     SourceTable = Student;
-    UsageCategory = Lists;
     
     layout
     {
         area(content)
         {
-            repeater(General)
+            group(General)
             {
+                Caption = 'General';
+                
                 field(ID; Rec.ID)
                 {
                     ToolTip = 'Specifies the value of the ID field.';
@@ -32,25 +33,9 @@ page 50110 "Student List"
                 {
                     ToolTip = 'Specifies the value of the Class ID field.';
                 }
-                field(SystemCreatedAt; Rec.SystemCreatedAt)
-                {
-                    ToolTip = 'Specifies the value of the SystemCreatedAt field.';
-                }
-                field(SystemCreatedBy; Rec.SystemCreatedBy)
-                {
-                    ToolTip = 'Specifies the value of the SystemCreatedBy field.';
-                }
                 field(SystemId; Rec.SystemId)
                 {
                     ToolTip = 'Specifies the value of the SystemId field.';
-                }
-                field(SystemModifiedAt; Rec.SystemModifiedAt)
-                {
-                    ToolTip = 'Specifies the value of the SystemModifiedAt field.';
-                }
-                field(SystemModifiedBy; Rec.SystemModifiedBy)
-                {
-                    ToolTip = 'Specifies the value of the SystemModifiedBy field.';
                 }
             }
         }
