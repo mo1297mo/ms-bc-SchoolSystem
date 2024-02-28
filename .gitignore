@@ -1,4 +1,6 @@
 **/.vscode/*
+.vscode
+.alpackages
 **/.alpackages
 **/.altemplates
 !**/.vscode/settings.json
