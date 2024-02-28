@@ -3,9 +3,10 @@ page 50110 "Student List"
     ApplicationArea = All;
     Caption = 'Student List';
     PageType = List;
+    CardPageId = "Student Card";
     SourceTable = Student;
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -16,13 +17,13 @@ page 50110 "Student List"
                 {
                     ToolTip = 'Specifies the value of the Class ID field.';
                 }
-                field("Date Of Birth"; Rec."Date Of Birth")
-                {
-                    ToolTip = 'Specifies the value of the Date Of Birth field.';
-                }
                 field("First Name"; Rec."First Name")
                 {
                     ToolTip = 'Specifies the value of the First Name field.';
+                }
+                field("Date Of Birth"; Rec."Date Of Birth")
+                {
+                    ToolTip = 'Specifies the value of the Date Of Birth field.';
                 }
                 field(ID; Rec.ID)
                 {
