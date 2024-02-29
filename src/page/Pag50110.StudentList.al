@@ -33,6 +33,10 @@ page 50110 "Student List"
                 {
                     ToolTip = 'Specifies the value of the Class ID field.';
                 }
+                field("Class Name"; Rec."Class Name")
+                {
+                    ToolTip = 'Specifies the value of the Class Name field.';
+                }
                 field(SystemCreatedAt; Rec.SystemCreatedAt)
                 {
                     ToolTip = 'Specifies the value of the SystemCreatedAt field.';

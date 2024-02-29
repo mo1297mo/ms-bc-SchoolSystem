@@ -33,6 +33,10 @@ page 50112 "Student Card"
                 {
                     ToolTip = 'Specifies the value of the Class ID field.';
                 }
+                field("Class Name"; Rec."Class Name")
+                {
+                    ToolTip = 'Specifies the value of the Class Name field.';
+                }
                 field(SystemId; Rec.SystemId)
                 {
                     ToolTip = 'Specifies the value of the SystemId field.';

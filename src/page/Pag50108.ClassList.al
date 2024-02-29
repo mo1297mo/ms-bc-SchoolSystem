@@ -29,6 +29,10 @@ page 50108 "Class List"
                 {
                     ToolTip = 'Specifies the value of the Class Teacher ID field.';
                 }
+                field("Class Teacher Name"; Rec."Class Teacher Name")
+                {
+                    ToolTip = 'Specifies the value of the Class Teacher Name field.';
+                }
                 field(SystemCreatedAt; Rec.SystemCreatedAt)
                 {
                     ToolTip = 'Specifies the value of the SystemCreatedAt field.';

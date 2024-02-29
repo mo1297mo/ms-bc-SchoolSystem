@@ -31,6 +31,22 @@ table 50100 "Class"
             Caption = 'Class Teacher ID';
             TableRelation = "Teacher"."ID";
         }
+        field(5; "Class Teacher Name"; Text[50])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Class Teacher Name';
+            Editable = false;
+
+            trigger OnValidate()
+            begin
+                ValidateTeacher();
+            end;
+
+        }
+
+
+
+
     }
 
     keys
@@ -40,4 +56,14 @@ table 50100 "Class"
             Clustered = true;
         }
     }
+
+    local procedure ValidateTeacher()
+    var
+        TeacherRec: Record "Teacher";
+    begin
+        if TeacherRec.Get("Class Teacher ID") then
+            "Class Teacher Name" := TeacherRec."First Name" + ' ' + TeacherRec."Last Name"
+        else
+            Error('Teacher with ID %1 does not exist.', "Class Teacher ID");
+    end;
 }
