@@ -30,6 +30,11 @@ table 50100 "Class"
             DataClassification = ToBeClassified;
             Caption = 'Class Teacher ID';
             TableRelation = "Teacher"."ID";
+
+            trigger OnValidate()
+            begin
+                ValidateTeacher();
+            end;
         }
         field(5; "Class Teacher Name"; Text[50])
         {
@@ -37,16 +42,7 @@ table 50100 "Class"
             Caption = 'Class Teacher Name';
             Editable = false;
 
-            trigger OnValidate()
-            begin
-                ValidateTeacher();
-            end;
-
         }
-
-
-
-
     }
 
     keys
